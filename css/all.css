@@ -1,0 +1,27 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: normal;
+}
+
+
+
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt {
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+.widget_text p,
+.widget_text ol,
+.widget_text ul,
+.widget_text dl,
+.widget_text dt,
+.widget-content .rssSummary {
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
