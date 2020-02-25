@@ -93,6 +93,22 @@ hr.styled-separator::after {
 
 /* -------------------------------------------------------------------------- */
 
+/*  3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+/* Toggles ----------------------------------- */
+
+button.toggle:focus {
+  text-decoration: none;
+}
+
+button.toggle:hover {
+  color: #ae460e;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  4.  Site Header
 /* -------------------------------------------------------------------------- */
 
@@ -116,6 +132,7 @@ hr.styled-separator::after {
 }
 
 .site-title a:hover {
+  color: #ae460e;
   text-decoration: underline;
 }
 
@@ -170,6 +187,10 @@ hr.styled-separator::after {
   color: #ae460e;
 }
 
+.post-meta .meta-icon {
+  color: #7f7f7f;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -210,3 +231,20 @@ hr.styled-separator::after {
 #site-footer {
   background-color: #f7f7f7;
 }
+
+#site-footer a:focus {
+  text-decoration: none;
+}
+
+#site-footer a:hover {
+  color: #ae460e;
+}
+
+.footer-copyright a {
+  color: #666;
+}
+
+.to-the-top {
+  color: #666;
+}
+
