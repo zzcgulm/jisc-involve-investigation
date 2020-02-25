@@ -98,7 +98,9 @@ hr.styled-separator::after {
 
 
 .header-footer-group {
-  border-bottom: .1rem solid #d9d9d9;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
 }
 
 /* Header Titles ----------------------------- */
@@ -155,10 +157,6 @@ hr.styled-separator::after {
 
 /* POST META */
 
-.post-meta {
-  color: #666;
-}
-
 .post-meta a {
   color: #069;
   text-decoration: underline;
@@ -196,4 +194,19 @@ hr.styled-separator::after {
 .widget_text dt,
 .widget-content .rssSummary {
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  16. Site Footer
+/* -------------------------------------------------------------------------- */
+
+
+.footer-nav-widgets-wrapper {
+  background-color: #f7f7f7;
+}
+
+#site-footer {
+  background-color: #f7f7f7;
 }
