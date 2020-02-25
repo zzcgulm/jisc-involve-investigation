@@ -91,19 +91,11 @@ hr.styled-separator::after {
 }
 
 
-/* -------------------------------------------------------------------------- */
+/* Quotes ------------------------------------ */
 
-/*  3. Helper Classes
-/* -------------------------------------------------------------------------- */
+blockquote {
 
-/* Toggles ----------------------------------- */
-
-button.toggle:focus {
-  text-decoration: none;
-}
-
-button.toggle:hover {
-  color: #ae460e;
+  border-left-width: .6rem;
 }
 
 
@@ -118,6 +110,7 @@ button.toggle:hover {
   -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
 }
+
 
 /* Header Titles ----------------------------- */
 
@@ -227,6 +220,9 @@ button.toggle:hover {
 .footer-nav-widgets-wrapper {
   background-color: #f7f7f7;
 }
+
+
+/* Footer Bottom ----------------------------- */
 
 #site-footer {
   background-color: #f7f7f7;
