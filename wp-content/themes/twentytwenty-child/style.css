@@ -10,7 +10,44 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 */
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
 
+  0.  CSS Reset
+  1.  Document Setup
+  2.  Element Base
+  3.  Helper Classes
+  4.  Site Header
+  5.  Menu Modal
+  6.  Search Modal
+  7.  Page Templates
+    a.  Template: Cover Template
+    c.  Template: Full Width
+  8.  Post: Archive
+  9.  Post: Single
+  10. Blocks
+  11. Entry Content
+  12. Comments
+  13. Site Pagination
+  14. Error 404
+  15. Widgets
+  16. Site Footer
+  17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  1. Document Setup
+/* -------------------------------------------------------------------------- */
 
 
 body {
@@ -20,6 +57,126 @@ body {
   letter-spacing: normal;
 }
 
+
+/* -------------------------------------------------------------------------- */
+
+/*  2. Element Base
+/* ---------------------------------------------*---------------------------- */
+
+
+a {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ae460e;
+}
+
+.entry-content hr,
+hr.styled-separator {
+  background: none;
+  background-color: #d9d9d9 !important;
+}
+
+.entry-content hr::before,
+.entry-content hr::after,
+hr.styled-separator::before,
+hr.styled-separator::after {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  4.  Site Header
+/* -------------------------------------------------------------------------- */
+
+
+.header-footer-group {
+  border-bottom: .1rem solid #d9d9d9;
+}
+
+/* Header Titles ----------------------------- */
+
+.site-title a {
+  color: #666;
+  display: block;
+  text-decoration: none;
+}
+
+.site-title a:focus {
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  text-decoration: underline;
+}
+
+.site-description {
+  color: #333;
+  transition: all 0.15s linear;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  9. Post: Single
+/* -------------------------------------------------------------------------- */
+
+
+/* Post Header ------------------------------- */
+
+.entry-categories a {
+  border-bottom-width: 0;
+  text-decoration: underline;
+}
+
+.entry-categories a:focus {
+  text-decoration: none;
+}
+
+.entry-title a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.entry-title a:focus {
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  color: #ae460e;
+}
+
+/* POST META */
+
+.post-meta {
+  color: #666;
+}
+
+.post-meta a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.post-meta a:focus {
+  text-decoration: none;
+}
+
+.post-meta a:hover {
+  color: #ae460e;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  11. Entry Content
+/* -------------------------------------------------------------------------- */
 
 
 .entry-content p,
