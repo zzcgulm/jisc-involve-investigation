@@ -71,6 +71,18 @@ a:hover {
   color: #ae460e;
 }
 
+.entry-content hr,
+hr.styled-separator {
+  background: none;
+  background-color: #d9d9d9 !important;
+}
+
+.entry-content hr::before,
+.entry-content hr::after,
+hr.styled-separator::before,
+hr.styled-separator::after {
+  display: none;
+}
 
 /* -------------------------------------------------------------------------- */
 
