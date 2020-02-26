@@ -162,6 +162,10 @@ blockquote {
 
 /* Archive Header ---------------------------- */
 
+.archive-header {
+  background-color: #f7f7f7;
+}
+
 .archive-header .archive-title .color-accent {
   color: #333;
 }
