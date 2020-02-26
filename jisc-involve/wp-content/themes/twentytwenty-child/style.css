@@ -50,3 +50,30 @@ body {
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: normal;
 }
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  16. Site Footer
+/* -------------------------------------------------------------------------- */
+
+
+#site-footer {
+  background-color: #f7f7f7;
+}
+
+
+/* Footer Bottom ----------------------------- */
+
+#site-footer a:focus {
+  text-decoration: none;
+}
+
+#site-footer a:hover {
+  color: #ae460e;
+}
+
+.footer-copyright a {
+  color: #666;
+}
+
