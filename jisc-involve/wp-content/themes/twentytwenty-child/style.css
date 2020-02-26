@@ -223,6 +223,10 @@ blockquote {
 /* -------------------------------------------------------------------------- */
 
 
+.entry-content a:hover {
+  text-decoration: underline;
+}
+
 .entry-content p,
 .entry-content ol,
 .entry-content ul,
@@ -230,8 +234,6 @@ blockquote {
 .entry-content dt {
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
 }
-
-
 
 .widget_text p,
 .widget_text ol,
