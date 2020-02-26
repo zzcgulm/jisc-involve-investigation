@@ -233,6 +233,21 @@ blockquote {
 }
 
 
+/* Single Pagination ------------------------- */
+
+.pagination-single a {
+  color: #666;
+}
+
+.pagination-single a:focus {
+  text-decoration: none;
+}
+
+.pagination-single a:hover {
+  color: #ae460e;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 
