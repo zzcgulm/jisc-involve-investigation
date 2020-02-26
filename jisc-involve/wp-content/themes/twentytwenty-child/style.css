@@ -222,6 +222,20 @@ blockquote {
 }
 
 
+/* Primary Menu ---------------------------- */
+
+body:not(.overlay-header) .primary-menu > li > a {
+  color: #666;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:focus {
+  text-decoration: none;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:hover {
+  color: #ae460e;/* Override theme customization in page style. */
+}
+
 /* -------------------------------------------------------------------------- */
 
 /*  5. Menu Modal
