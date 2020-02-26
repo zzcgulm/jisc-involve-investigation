@@ -156,6 +156,69 @@ blockquote {
 
 /* -------------------------------------------------------------------------- */
 
+/*  9. Post: Single
+/* -------------------------------------------------------------------------- */
+
+
+/* Post Header ------------------------------- */
+
+.singular .entry-header {
+  background-color: #f7f7f7;
+}
+
+.singular:not(.overlay-header) .entry-header a:hover {/* Override theme customization in page style. */
+  color: #ae460e;
+}
+
+
+.entry-categories a {
+  border-bottom-width: 0;
+  text-decoration: underline;
+}
+
+.entry-categories a:focus {
+  text-decoration: none;
+}
+
+.entry-title a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.entry-title a:focus {
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  color: #ae460e;
+}
+
+/* POST META */
+
+.singular:not(.overlay-header) .entry-header .post-meta a,/* Override theme customization in page style. */
+.post-meta a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.singular:not(.overlay-header) .entry-header .post-meta a:focus,/* Override theme customization in page style. */
+.post-meta a:focus {
+  text-decoration: none;
+}
+
+.singular:not(.overlay-header) .entry-header .post-meta a:hover,/* Override theme customization in page style. */
+.post-meta a:hover {
+  color: #ae460e;
+}
+
+.post-meta .meta-icon {
+  color: #7f7f7f;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  11. Entry Content
 /* -------------------------------------------------------------------------- */
 
