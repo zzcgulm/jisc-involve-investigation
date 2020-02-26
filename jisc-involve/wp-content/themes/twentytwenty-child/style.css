@@ -106,6 +106,29 @@ blockquote {
 }
 
 
+/* Header Titles ----------------------------- */
+
+.site-title a {
+  color: #666;
+  display: block;
+  text-decoration: none;
+}
+
+.site-title a:focus {
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
+.site-description {
+  color: #333;
+  transition: all 0.15s linear;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  5. Menu Modal
