@@ -64,6 +64,107 @@ body {
 /* ---------------------------------------------*---------------------------- */
 
 
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  2. Element Base
+/* ---------------------------------------------*---------------------------- */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.faux-heading {
+/*  font-feature-settings: "lnum";*/
+/*  font-variant-numeric: lining-nums;*/
+/*  font-weight: 700;*/
+  letter-spacing: normal;
+/*  line-height: 1.25;*/
+/*  margin: 3.5rem 0 2rem;*/
+}
+
+h1,
+.heading-size-1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 4.05rem;
+
+/*  @include breakpoint($breakpoint-XS) {*/
+    font-size: 4.05rem;
+    line-height: 4.5rem;
+/*  }*/
+
+/*  @include breakpoint($breakpoint-MD) {*/
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+/*  }*/
+}
+
+h2,
+.heading-size-2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+
+/*  @include breakpoint($breakpoint-XS) {*/
+    font-size: 3.15rem;
+    line-height: 4.05rem;
+/*  }*/
+
+/*  @include breakpoint($breakpoint-MD) {*/
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+/*  }*/
+}
+
+h3,
+.heading-size-3 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+
+/*  @include breakpoint($breakpoint-XS) {*/
+    font-size: 2.7rem;
+    line-height: 3.6rem;
+/*  }*/
+}
+
+h4,
+.heading-size-4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+
+/*  @include breakpoint($breakpoint-XS) {*/
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+/*  }*/
+}
+
+h5,
+.heading-size-5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+
+h6,
+.heading-size-6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  text-transform: none;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
 a {
   color: #069;
   text-decoration: underline;
@@ -94,7 +195,6 @@ hr.styled-separator::after {
 /* Quotes ------------------------------------ */
 
 blockquote {
-
   border-left-width: .6rem;
 }
 
@@ -105,7 +205,7 @@ blockquote {
 /* -------------------------------------------------------------------------- */
 
 
-.header-footer-group {
+#site-header {
   -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
@@ -142,6 +242,10 @@ blockquote {
 
 
 /* Post Header ------------------------------- */
+
+.singular .entry-header {
+  background-color: #f7f7f7;
+}
 
 .entry-categories a {
   border-bottom-width: 0;
@@ -182,6 +286,22 @@ blockquote {
 
 .post-meta .meta-icon {
   color: #7f7f7f;
+}
+
+
+/* Single Pagination ------------------------- */
+
+
+.pagination-single a {
+  color: #666;
+}
+
+.pagination-single a:focus {
+  text-decoration: none;
+}
+
+.pagination-single a:hover {
+  color: #ae460e;
 }
 
 
@@ -243,4 +363,3 @@ blockquote {
 .to-the-top {
   color: #666;
 }
-
