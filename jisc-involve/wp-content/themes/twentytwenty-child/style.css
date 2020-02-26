@@ -84,6 +84,15 @@ hr.styled-separator::after {
   display: none;
 }
 
+
+/* Quotes ------------------------------------ */
+
+blockquote {
+  border-left-width: .6rem;
+  border-left-color: #d9d9d9;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  16. Site Footer
