@@ -222,6 +222,28 @@ blockquote {
 }
 
 
+/* Header Toggles ---------------------------- */
+
+body:not(.overlay-header) #site-header .toggle {
+  color: #666;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) #site-header .toggle:focus {
+  text-decoration: none;/* Override theme customization in page styles. */
+}
+
+body:not(.overlay-header) #site-header .toggle:hover {
+  color: #ae460e;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) .toggle:focus .toggle-inner .toggle-text {
+  text-decoration: none;
+}
+
+body:not(.overlay-header) .toggle:hover .toggle-inner .toggle-text {
+  color: #ae460e;/* Override theme customization in page style. */
+}
+
 /* Primary Menu ---------------------------- */
 
 body:not(.overlay-header) .primary-menu > li > a {
