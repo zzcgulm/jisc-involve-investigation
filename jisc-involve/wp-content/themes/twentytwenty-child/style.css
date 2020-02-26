@@ -89,7 +89,7 @@ hr.styled-separator::after {
 
 blockquote {
   border-left-width: .6rem;
-  border-left-color: #d9d9d9;
+  border-left-color: #d9d9d9;/* Override theme customization in page style. */
 }
 
 
@@ -103,6 +103,31 @@ blockquote {
   -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  5. Menu Modal
+/* -------------------------------------------------------------------------- */
+
+.menu-modal .toggle {
+  color: #666;/* Override theme customization in page style. */
+}
+
+
+/* Main Menu --------------------------------- */
+
+.modal-menu a {
+  color: #666;
+}
+
+.modal-menu a:focus {
+  text-decoration: none;
+}
+
+.modal-menu a:hover {
+  color: #ae460e;
 }
 
 
@@ -130,4 +155,3 @@ blockquote {
 .footer-copyright a {
   color: #666;
 }
-
