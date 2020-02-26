@@ -247,6 +247,35 @@ blockquote {
 
 /* -------------------------------------------------------------------------- */
 
+/*  12. Comments
+/* -------------------------------------------------------------------------- */
+
+
+/* Comment Item ----------------------------- */
+
+/* COMMENT HEADER */
+
+.comment-meta a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.comment-meta a:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
+.comment-metadata a {
+  text-decoration: underline;
+}
+
+.comment-metadata a:focus {
+  text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  15. Widgets
 /* -------------------------------------------------------------------------- */
 
