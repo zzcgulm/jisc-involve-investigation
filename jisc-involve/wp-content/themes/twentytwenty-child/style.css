@@ -267,6 +267,15 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
   color: #666;/* Override theme customization in page style. */
 }
 
+.menu-modal .toggle:focus {
+  text-decoration: none;
+}
+
+.menu-modal .toggle:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
 
 /* Main Menu --------------------------------- */
 
