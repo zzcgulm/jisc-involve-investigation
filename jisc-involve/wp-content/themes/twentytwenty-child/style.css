@@ -159,10 +159,26 @@ blockquote {
 
 /* -------------------------------------------------------------------------- */
 
+/*  15. Widgets
+/* -------------------------------------------------------------------------- */
+
+
+.widget a {
+  text-decoration: underline;
+}
+
+.widget a:focus {
+  text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  16. Site Footer
 /* -------------------------------------------------------------------------- */
 
 
+.footer-nav-widgets-wrapper,/* Override theme customization in page style. */
 #site-footer {
   background-color: #f7f7f7;
 }
