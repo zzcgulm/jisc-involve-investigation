@@ -31,7 +31,6 @@ https://wordpress.org/support/article/twenty-twenty/
   - Elements = https://wp-themes.com/twentytwenty/?p=36
 
 
-
 ## Default styles
 
 ### Breakpoints
@@ -52,7 +51,23 @@ https://wordpress.org/support/article/twenty-twenty/
 
 
 
-## Customization
+## What I know
+
+
+### Accessibility failures
+- Does the "aria-label" attribute accurately describe the element? (A 1.1.1 Non-text Content) = Review: 
+  - "Horizontal"
+  - "Mobile"
+  - These aren't fantastically semantic, especially as this is aimed at screen reader users, who can't see if they are horizontal or on a mobile. But are bearable.
+- Link identified only by color (A 1.4.1 Use of Color) = Error: These will be fixed in child theme.
+- Link text used for multiple different destinations (A 2.4.4 Link Purpose (In Context) = Error: Nothing we can do about this. #TODO: Report in accessibility statement.
+
+
+
+## What I believe is possible
+
+
+### Customization
 
 - Add a site logo (https://wordpress.org/support/article/twenty-twenty/#site-logo)
 - Custom colours (https://wordpress.org/support/article/twenty-twenty/#site-logo)
