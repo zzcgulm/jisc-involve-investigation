@@ -246,8 +246,21 @@ body:not(.overlay-header) .toggle:hover .toggle-inner .toggle-text {
 
 /* Primary Menu ---------------------------- */
 
+.primary-menu li.current-menu-item > a {
+  text-decoration: none;
+}
+
+.primary-menu li.current-menu-item > a:hover {
+  text-decoration: underline;
+}
+
 body:not(.overlay-header) .primary-menu > li > a {
   color: #666;/* Override theme customization in page style. */
+}
+
+
+body:not(.overlay-header) .primary-menu > li.current-menu-item > a {
+  color: #333;/* Override theme customization in page style. */
 }
 
 body:not(.overlay-header) .primary-menu > li > a:focus {
