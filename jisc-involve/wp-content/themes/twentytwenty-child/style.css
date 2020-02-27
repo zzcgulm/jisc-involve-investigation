@@ -206,6 +206,7 @@ input[type="submit"] {
 
 input[type="submit"]:focus,
 input[type="submit"]:hover {
+  text-decoration: none;
   background-color: #0092cb;
   -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
@@ -493,6 +494,17 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 
 .comment-metadata a:focus {
   text-decoration: none;
+}
+
+/* COMMENT FOOTER */
+
+
+.comment-footer-meta a:focus {
+  text-decoration: none;
+}
+
+.comment-footer-meta a:hover {
+  color: #fff;
 }
 
 
