@@ -472,9 +472,12 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 /* -------------------------------------------------------------------------- */
 
 
-.footer-nav-widgets-wrapper,/* Override theme customization in page style. */
+.footer-nav-widgets-wrapper {
+  background-color: #f7f7f7;/* Override theme customization in page style. */
+}
+
 #site-footer {
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
 }
 
 
@@ -490,4 +493,11 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 
 .footer-copyright a {
   color: #666;
+}
+
+
+/* Footer Widgets ---------------------------- */
+
+.footer-widgets-outer-wrapper {
+  border-bottom-width: 0;/* Override theme customization in page style. */
 }
