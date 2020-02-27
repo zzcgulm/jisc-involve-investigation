@@ -186,6 +186,25 @@ blockquote {
 }
 
 
+/* Inputs ------------------------------------ */
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background-color: #0092cb;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+input[type="submit"]:hover {
+  box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.23), 0 0.3rem 1.2rem rgba(0, 0, 0, 0.16); }
+}
+
+input[type="submit"]:active {
+  box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  4.  Site Header
