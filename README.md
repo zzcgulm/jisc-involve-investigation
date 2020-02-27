@@ -32,7 +32,36 @@ https://wordpress.org/support/article/twenty-twenty/
 
 
 
+## Default styles
+
+### Breakpoints
+
+- max-width: 479px
+- min-width: 480px
+- max-width: 599px
+- min-width: 600px
+- min-width: 660px
+- min-width: 700px
+- min-width: 782px
+- max-width: 782px
+- min-width: 1000px
+- min-width: 1220px
+- min-width: 1240px
+- min-width: 1280px
+- min-width: 1330px
+
+
+
+## Customization
+
+- Add a site logo (https://wordpress.org/support/article/twenty-twenty/#site-logo)
+- Custom colours (https://wordpress.org/support/article/twenty-twenty/#site-logo)
+
+
+
 ## Todo
 
 - Work out how to add Roboto font.
+- Buttons
+- Typography
 - Print styles.
