@@ -431,6 +431,13 @@ body.template-full-width [class*="__inner-container"] > *:not(.alignwide):not(.a
   margin-right: auto;
   margin-left: auto;
   max-width: 97.2rem;
+  width: calc(100% - 4rem);
+}
+
+@media ( min-width: 700px ) {
+  .entry-content {
+    width: calc(100% - 8rem);
+  }
 }
 
 .entry-content > * {
