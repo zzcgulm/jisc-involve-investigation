@@ -305,9 +305,6 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
   color: #ae460e;
 }
 
-.entry-categories-inner {
-  justify-content: left;
-}
 
 .entry-categories a {
   border-bottom-width: 0;
@@ -366,18 +363,6 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 
 .pagination-single a:hover {
   color: #ae460e;
-}
-
-
-/* -------------------------------------------------------------------------- */
-
-/*  10. Blocks
-/* -------------------------------------------------------------------------- */
-
-/* Block Typography Classes ------------------ */
-
-.has-text-align-center {
-  text-align: left;
 }
 
 
