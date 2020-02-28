@@ -61,6 +61,7 @@ https://wordpress.org/support/article/twenty-twenty/
   - These aren't fantastically semantic, especially as this is aimed at screen reader users, who can't see if they are horizontal or on a mobile. But are bearable.
 - Link identified only by color (A 1.4.1 Use of Color) = Error: These will be fixed in child theme.
 - Link text used for multiple different destinations (A 2.4.4 Link Purpose (In Context) = Error: Nothing we can do about this. #TODO: Report in accessibility statement.
+- `<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">` lacks keyboard focus style.
 
 
 
@@ -77,6 +78,4 @@ https://wordpress.org/support/article/twenty-twenty/
 ## Todo
 
 - Work out how to add Roboto font.
-- Buttons
-- Typography
 - Print styles.
