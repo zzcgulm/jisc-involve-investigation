@@ -155,6 +155,22 @@ input[type="submit"]:active {
 
 /* -------------------------------------------------------------------------- */
 
+/*  3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+/* Sections ---------------------------------- */
+
+.section-inner {
+  max-width: 97.2rem;
+}
+
+.section-inner.medium {
+  max-width: 97.2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  4.  Site Header
 /* -------------------------------------------------------------------------- */
 
@@ -163,6 +179,10 @@ input[type="submit"]:active {
   -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+}
+
+.header-inner {
+  max-width: 97.2rem;
 }
 
 
@@ -274,6 +294,18 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 
 /* -------------------------------------------------------------------------- */
 
+/*  7c. Template: Full Width
+/* -------------------------------------------------------------------------- */
+
+
+body.template-full-width .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+body.template-full-width [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 97.2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  8. Post: Archive
 /* -------------------------------------------------------------------------- */
 
@@ -282,6 +314,10 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 
 .archive-header {
   background-color: #f7f7f7;
+}
+
+.archive-header-inner {
+  text-align: left;
 }
 
 .archive-header .archive-title .color-accent {
@@ -301,10 +337,17 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
   background-color: #f7f7f7;
 }
 
+.entry-header.has-text-align-center {
+  text-align: left;
+}
+
 .singular:not(.overlay-header) .entry-header a:hover {/* Override theme customization in page style. */
   color: #ae460e;
 }
 
+.entry-categories-inner {
+  justify-content: start;
+}
 
 .entry-categories a {
   border-bottom-width: 0;
@@ -329,6 +372,17 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 }
 
 /* POST META */
+
+.post-meta-single-top .post-meta {
+  justify-content: start;
+}
+
+.post-meta-wrapper {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%;
+  width: 100%;
+}
 
 .singular:not(.overlay-header) .entry-header .post-meta a,/* Override theme customization in page style. */
 .post-meta a {
@@ -373,6 +427,17 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 /* -------------------------------------------------------------------------- */
 
 
+.entry-content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 97.2rem;
+}
+
+.entry-content > * {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .entry-content a:hover {
   text-decoration: underline;
 }
@@ -392,6 +457,13 @@ body:not(.overlay-header) .primary-menu > li > a:hover {
 .widget_text dt,
 .widget-content .rssSummary {
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Alignment Classes ------------------------- */
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 72.45rem;
+  width: 100%;
 }
 
 
