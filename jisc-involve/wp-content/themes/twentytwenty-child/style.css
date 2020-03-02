@@ -176,9 +176,8 @@ input[type="submit"]:active {
 
 
 #site-header {
-  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
-  -moz-box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
-  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+  color: #fff;
+  background-color: #333;
 }
 
 .header-inner {
@@ -186,10 +185,15 @@ input[type="submit"]:active {
 }
 
 
+
 /* Header Titles ----------------------------- */
 
+.header-titles {
+  display: flex;
+  align-items: center;
+}
+
 .site-title a {
-  color: #666;
   display: block;
   text-decoration: none;
 }
@@ -201,26 +205,63 @@ input[type="submit"]:active {
 .site-title a:hover {
   color: #ae460e;
   text-decoration: underline;
+  opacity: .7;
+}
+
+.site-title img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+@media ( min-width: 700px ) {
+  .site-title img {
+    width: 4.5rem;
+    height: 3.6rem;
+  }
 }
 
 .site-description {
-  color: #333;
-  transition: all 0.15s linear;
+  display: block;
+  margin-top: 0;
+  margin-left: .9rem;
+  color: #fff;
 }
 
 
 /* Header Toggles ---------------------------- */
 
-body:not(.overlay-header) #site-header .toggle {
-  color: #666;/* Override theme customization in page style. */
+body:not(.overlay-header) #site-header .toggle.search-toggle,
+body:not(.overlay-header) #site-header .toggle.nav-toggle {
+  color: #fff;/* Override theme customization in page style. */
 }
 
-body:not(.overlay-header) #site-header .toggle:focus {
+body:not(.overlay-header) #site-header .toggle.search-toggle:focus,
+body:not(.overlay-header) #site-header .toggle.nav-toggle:focus {
   text-decoration: none;/* Override theme customization in page styles. */
 }
 
-body:not(.overlay-header) #site-header .toggle:hover {
+body:not(.overlay-header) #site-header .toggle.search-toggle:hover,
+body:not(.overlay-header) #site-header .toggle.nav-toggle:hover {
+  color: #d9d9d9;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) #site-header .toggle.search-untoggle,
+body:not(.overlay-header) #site-header .toggle.close-nav-toggle {
+  color: #666;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) #site-header .toggle.search-untoggle:focus,
+body:not(.overlay-header) #site-header .toggle.close-nav-toggle:focus {
+  text-decoration: none;/* Override theme customization in page styles. */
+}
+
+body:not(.overlay-header) #site-header .toggle.search-untoggle:hover,
+body:not(.overlay-header) #site-header .toggle.close-nav-toggle:hover {
   color: #ae460e;/* Override theme customization in page style. */
+}
+
+body:not(.overlay-header) .toggle-inner .toggle-text {
+  color: #fff;
 }
 
 body:not(.overlay-header) .toggle:focus .toggle-inner .toggle-text {
@@ -228,8 +269,9 @@ body:not(.overlay-header) .toggle:focus .toggle-inner .toggle-text {
 }
 
 body:not(.overlay-header) .toggle:hover .toggle-inner .toggle-text {
-  color: #ae460e;/* Override theme customization in page style. */
+  color: #d9d9d9;/* Override theme customization in page style. */
 }
+
 
 /* Primary Menu ---------------------------- */
 
@@ -242,7 +284,7 @@ body:not(.overlay-header) .toggle:hover .toggle-inner .toggle-text {
 }
 
 body:not(.overlay-header) .primary-menu > li > a {
-  color: #666;/* Override theme customization in page style. */
+  color: #fff;/* Override theme customization in page style. */
 }
 
 
@@ -561,10 +603,37 @@ body.template-full-width [class*="__inner-container"] > *:not(.alignwide):not(.a
   color: #ae460e;
 }
 
+.footer-copyright {
+  display: flex;
+  align-items: center;
+}
+
 .footer-copyright a {
+  margin-left: .9rem;
   color: #666;
 }
 
+.footer-copyright a:hover {
+  opacity: .7;
+}
+
+.footer-copyright a img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+@media (min-width: 700px) {
+  .footer-copyright a img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-credits {
+    align-items: center;
+  }
+}
 
 /* Footer Widgets ---------------------------- */
 
