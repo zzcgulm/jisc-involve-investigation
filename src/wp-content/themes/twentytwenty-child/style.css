@@ -100,11 +100,34 @@ hr.styled-separator::after {
 
 blockquote {
   border-left-width: .6rem;
-  border-left-color: #d9d9d9 !important; /* Override appearance customization inline style. */
 }
 
+body blockquote {
+  border-left-color: #d9d9d9; /* Override appearance customization inline style. */
+}
+
+/* Code -------------------------------------- */
+
+body code,
+body kbd,
+body samp {
+  background: #f7f7f7;
+  border-radius: .3rem;
+}
+
+body pre {
+  border-color: #d9d9d9;
+}
 
 /* Inputs ------------------------------------ */
+
+fieldset {
+  border-width: .1rem;
+}
+
+body fieldset {
+  border-color: #d9d9d9; /* Override appearance customization inline style. */
+}
 
 button,
 .button,
@@ -166,6 +189,22 @@ input[type="reset"]:active,
 input[type="submit"]:active {
   box-shadow: none;
 }
+
+/* Tables ------------------------------------ */
+
+body table {
+  border-color: #d9d9d9;
+}
+
+body th,
+body td {
+  border-color: #d9d9d9;
+}
+
+body caption {
+  background-color:transparent;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
