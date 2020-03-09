@@ -101,6 +101,69 @@ blockquote {
 }
 
 
+/* Inputs ------------------------------------ */
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-radius: .6rem;
+}
+
+body button,
+body .button,
+body .faux-button,
+body .wp-block-button__link,
+body .wp-block-file .wp-block-file__button,
+body input[type="button"],
+body input[type="reset"],
+body input[type="submit"] {
+  text-transform: none;
+  background: #007aaa; /* Override appearance customization inline style. */
+}
+
+button:focus,
+.button:focus,
+.faux-button:focus,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-file .wp-block-file__button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  text-decoration: none;
+  background: #0092cb;
+  border-radius: 0;
+  outline: .3rem solid #fd6;
+}
+
+button:hover,
+.button:hover,
+.faux-button:hover,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-file .wp-block-file__button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  text-decoration: none;
+  background: #0092cb;
+  box-shadow: 0 .3rem 1.2rem rgba(0,0,0,.23),0 .3rem 1.2rem rgba(0,0,0,.16);
+}
+
+button:active,
+.button:active,
+.faux-button:active,
+.wp-block-button .wp-block-button__link:active,
+.wp-block-file .wp-block-file__button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  box-shadow: none;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /*  3. Helper Classes
