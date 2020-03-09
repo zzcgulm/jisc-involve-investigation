@@ -55,8 +55,11 @@ body {
 
 
 a {
-  color: #069;
   text-decoration: underline;
+}
+
+body a {
+  color: #069; /* Override appearance customization inline style. */
 }
 
 a:focus {
@@ -100,6 +103,17 @@ blockquote {
 
 /* -------------------------------------------------------------------------- */
 
+/*  3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+
+.header-footer-group .color-accent.color-accent {
+  color: #666;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  4.  Site Header
 /* -------------------------------------------------------------------------- */
 
@@ -115,6 +129,29 @@ blockquote {
 .site-description {
   display: block;
   font-size: 1.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  7a. Template: Cover Template
+/* -------------------------------------------------------------------------- */
+
+
+.singular:not(.overlay-header) .entry-header.entry-header a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.singular:not(.overlay-header) .entry-header a:focus {
+  color: #333;
+}
+
+.singular:not(.overlay-header) .entry-header a:hover {
+  color: #ae460e;
+}
+
+.singular:not(.overlay-header) .entry-header a:active {
+  color: #333;
 }
 
 
@@ -141,6 +178,15 @@ blockquote {
 
 .singular .entry-header {
   background-color: #f7f7f7;
+}
+
+.entry-categories a {
+  border-bottom-width: 0;
+  text-decoration: underline;
+}
+
+.entry-categories a:focus {
+  text-decoration: none;
 }
 
 
