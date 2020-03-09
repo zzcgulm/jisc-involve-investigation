@@ -252,6 +252,62 @@ input[type="submit"]:active {
   text-decoration: none;
 }
 
+.entry-title a {
+  text-decoration: underline;
+}
+
+.entry-title.entry-title a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.entry-title a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  color: #ae460e;
+}
+
+.entry-title a:active {
+  color: #333;
+}
+
+/* POST META */
+
+.post-meta.post-meta {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+.post-meta a {
+  text-decoration: underline;
+}
+
+.post-meta.post-meta,
+.singular:not(.overlay-header) .entry-header .post-meta.post-meta a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.post-meta a:focus,
+.singular:not(.overlay-header) .entry-header .post-meta a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-meta a:hover,
+.singular:not(.overlay-header) .entry-header .post-meta a:hover {
+  color: #ae460e;
+}
+
+.post-meta a:active,
+.singular:not(.overlay-header) .entry-header .post-meta a:active {
+  color: #333;
+}
+
+.post-meta .meta-icon {
+  color: #7f7f7f;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -267,12 +323,6 @@ input[type="submit"]:active {
 .widget_recent_entries a:focus {
   color: #333;
   text-decoration: none;
-}
-
-.widget_recent_entries a:hover {
-}
-
-.widget_recent_entries a:active {
 }
 
 
