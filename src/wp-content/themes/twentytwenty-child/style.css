@@ -42,9 +42,12 @@
 
 body {
   background: #fff;
-  color: #333;
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: normal;
+}
+
+html body {
+  color: #333; /* Override appearance customization inline style. */
 }
 
 
