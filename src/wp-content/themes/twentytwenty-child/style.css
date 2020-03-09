@@ -68,6 +68,7 @@ a:focus {
 
 a:hover {
   color: #ae460e;
+  text-decoration: underline;
 }
 
 a:active {
@@ -94,4 +95,54 @@ hr.styled-separator::after {
 blockquote {
   border-left-width: .6rem;
   border-left-color: #d9d9d9 !important; /* Override appearance customization inline style. */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  16. Site Footer
+/* -------------------------------------------------------------------------- */
+
+
+.footer-nav-widgets-wrapper {
+  background-color: #f7f7f7; /* Override appearance customization inline style. */
+}
+
+#site-footer {
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+
+/* Footer Bottom ----------------------------- */
+
+#site-footer a:focus {
+  text-decoration: none;
+}
+
+#site-footer a:active {
+  text-decoration: underline;
+}
+
+.footer-copyright a {
+  margin-left: .9rem;
+  color: #666;
+}
+
+.footer-copyright a:focus {
+  color: #333;
+}
+
+.footer-copyright a:hover {
+  color: #ae460e;
+}
+
+#site-footer .footer-copyright a:active {
+  color: #333;
+}
+
+/* Footer Widgets ---------------------------- */
+
+.footer-widgets-outer-wrapper {
+  border-bottom-width: 0; /* Override appearance customization inline style. */
 }
