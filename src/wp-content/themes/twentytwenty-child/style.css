@@ -46,3 +46,31 @@ body {
   font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: normal;
 }
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  2. Element Base
+/* ---------------------------------------------*---------------------------- */
+
+
+a {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #333;
+  text-decoration: none;
+  background-color: #fd6;
+  outline: .3rem solid #fd6;
+}
+
+a:hover {
+  color: #ae460e;
+}
+
+a:active {
+  color: #333;
+  text-decoration: underline;
+}
