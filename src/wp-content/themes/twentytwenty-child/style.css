@@ -146,6 +146,29 @@ blockquote {
 
 /* -------------------------------------------------------------------------- */
 
+/*  15. Widgets
+/* -------------------------------------------------------------------------- */
+
+/* Widget: Recent Entries -------------------- */
+
+.widget_recent_entries a {
+  text-decoration: underline;
+}
+
+.widget_recent_entries a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.widget_recent_entries a:hover {
+}
+
+.widget_recent_entries a:active {
+}
+
+
+/* -------------------------------------------------------------------------- */
+
 /*  16. Site Footer
 /* -------------------------------------------------------------------------- */
 
@@ -191,6 +214,26 @@ blockquote {
 
 .footer-widgets-outer-wrapper {
   border-bottom-width: 0; /* Override appearance customization inline style. */
+}
+
+.footer-widgets a {
+  text-decoration: underline;
+}
+
+.footer-widgets.footer-widgets a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.footer-widgets a:focus {
+  color: #333;
+}
+
+.footer-widgets a:hover {
+  color: #ae460e;
+}
+
+.footer-widgets a:active {
+  color: #333;
 }
 
 
