@@ -331,10 +331,10 @@ body caption {
 }
 
 .post-meta a {
+  color: #069;
   text-decoration: underline;
 }
 
-.post-meta.post-meta,
 .singular:not(.overlay-header) .entry-header .post-meta.post-meta a {
   color: #069; /* Override appearance customization inline style. */
 }
