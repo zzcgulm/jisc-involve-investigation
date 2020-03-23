@@ -212,8 +212,12 @@ body caption {
 /* -------------------------------------------------------------------------- */
 
 
+.header-footer-group.header-footer-group {
+  color: #333; /* Override appearance customization inline style. */
+}
+
 .header-footer-group .color-accent.color-accent {
-  color: #666;
+  color: #666; /* Override appearance customization inline style. */
 }
 
 
