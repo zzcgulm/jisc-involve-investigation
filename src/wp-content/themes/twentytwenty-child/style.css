@@ -233,12 +233,15 @@ body caption {
 
 
 #site-header {
-  color: #fff;
-  background-color: #333;
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
 }
 
 
 /* Header Titles ----------------------------- */
+
+.site-title a {
+  color: #666;
+}
 
 .site-title a:focus {
   color: #333;
@@ -246,22 +249,15 @@ body caption {
 }
 
 .site-title a:hover {
-  color: #d9d9d9;
+  color: #ae460e;
 }
 
 .site-title a:active {
   color: #333;
-  text-decoration: underline;
-}
-
-.site-description {
-  display: block;
-  color: #d9d9d9;
-  font-size: 1.5rem;
 }
 
 .site-description.site-description {
-  color: #d9d9d9; /* Override appearance customization inline style. */
+  color: #333; /* Override appearance customization inline style. */
 }
 
 
