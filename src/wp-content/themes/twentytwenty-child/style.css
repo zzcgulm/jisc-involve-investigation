@@ -297,6 +297,7 @@ body caption {
 .entry-categories a {
   border-bottom-width: 0;
   text-decoration: underline;
+  text-transform: none;
 }
 
 .entry-categories a:focus {
