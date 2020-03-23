@@ -240,9 +240,28 @@ body caption {
 
 /* Header Titles ----------------------------- */
 
+.site-title a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #d9d9d9;
+}
+
+.site-title a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
 .site-description {
   display: block;
+  color: #d9d9d9;
   font-size: 1.5rem;
+}
+
+.site-description.site-description {
+  color: #d9d9d9; /* Override appearance customization inline style. */
 }
 
 
@@ -437,6 +456,7 @@ body caption {
 /* Footer Bottom ----------------------------- */
 
 #site-footer a:focus {
+  color: #333;
   text-decoration: none;
 }
 
