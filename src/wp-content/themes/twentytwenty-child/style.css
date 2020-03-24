@@ -311,7 +311,36 @@ body:not(.overlay-header) .primary-menu.primary-menu > li > a {
   color: #666; /* Override appearance customization inline style. */
 }
 
+body:not(.overlay-header) .primary-menu > li > a:focus {
+  text-decoration: none; /* Override appearance customization inline style. */
+}
 
+body:not(.overlay-header) .primary-menu > li > a:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:active {
+  color: #333; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li.current-menu-item > a {
+  color: #333; /* Override appearance customization inline style. */
+  text-decoration: none;
+}
+
+body:not(.overlay-header) .primary-menu > li > a:focus {
+  color: #333;
+  text-decoration: none; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+  text-decoration: underline;
+}
+
+body:not(.overlay-header) .primary-menu > li > a:active {
+  text-decoration: underline;
+}
 
 /* -------------------------------------------------------------------------- */
 
@@ -335,6 +364,30 @@ body:not(.overlay-header) .primary-menu.primary-menu > li > a {
   color: #333; /* Override appearance customization inline style. */
 }
 
+
+/* Main Menu --------------------------------- */
+
+.modal-menu.modal-menu a {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+.modal-menu.modal-menu a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.modal-menu.modal-menu a:hover {
+  color: #ae460e;
+}
+
+.modal-menu.modal-menu a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
+.menu-modal.menu-modal nav * {
+  border-color: #d9d9d9; /* Override appearance customization inline style. */
+}
 
 /* -------------------------------------------------------------------------- */
 
