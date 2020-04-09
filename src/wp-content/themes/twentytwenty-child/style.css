@@ -50,6 +50,63 @@ html body {
 /* ---------------------------------------------*---------------------------- */
 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.faux-heading {
+  font-feature-settings: normal;
+  font-variant-numeric: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+h1,
+.heading-size-1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 5.4rem;
+}
+
+h2,
+.heading-size-2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+h3,
+.heading-size-3 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+}
+
+h4,
+.heading-size-4 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+h5,
+.heading-size-5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+
+h6,
+.heading-size-6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
 a {
   text-decoration: underline;
 }
@@ -488,6 +545,13 @@ input[type="search"].search-field:focus {
 
 .entry-categories a:focus {
   text-decoration: none;
+}
+
+h1.entry-title,
+h2.entry-title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.4rem;
 }
 
 .entry-title a {
