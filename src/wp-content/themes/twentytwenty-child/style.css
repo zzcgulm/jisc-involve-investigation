@@ -43,6 +43,21 @@ html body {
   color: #333; /* Override appearance customization inline style. */
 }
 
+/* Screen Reader Text ------------------------ */
+
+.screen-reader-text:focus {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+/* Skip Link --------------------------------- */
+
+.skip-link:focus {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
