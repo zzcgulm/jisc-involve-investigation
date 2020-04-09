@@ -306,6 +306,11 @@ body caption {
   text-align: left;
 }
 
+.site-title {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
 .site-title a {
   color: #666;
 }
@@ -321,6 +326,11 @@ body caption {
 
 .site-title a:active {
   color: #333;
+}
+
+.site-description {
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .site-description.site-description {
@@ -378,6 +388,12 @@ body:not(.overlay-header) #site-header .search-untoggle.search-untoggle:active {
 
 
 /* Primary Menu ---------------------------- */
+
+ul.primary-menu {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
 
 body:not(.overlay-header) .primary-menu.primary-menu > li > a {
   color: #666; /* Override appearance customization inline style. */
@@ -441,6 +457,13 @@ body:not(.overlay-header) .primary-menu > li > a:active {
 
 .modal-menu.modal-menu a {
   color: #666; /* Override appearance customization inline style. */
+}
+
+.modal-menu > li > a,
+.modal-menu > li > .ancestor-wrapper > a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
 .modal-menu.modal-menu a:focus {
@@ -524,6 +547,13 @@ input[type="search"].search-field:focus {
   background-color: #f7f7f7;
 }
 
+.archive-title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  letter-spacing: normal;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
@@ -539,6 +569,9 @@ input[type="search"].search-field:focus {
 
 .entry-categories a {
   border-bottom-width: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
   text-decoration: underline;
   text-transform: none;
 }
@@ -719,6 +752,10 @@ h2.entry-title {
 
 #site-footer .footer-copyright a:active {
   color: #333;
+}
+
+.footer-copyright {
+  font-weight: 400;
 }
 
 /* Footer Widgets ---------------------------- */
