@@ -552,6 +552,9 @@ input[type="search"].search-field:focus {
 /*  11. Entry Content
 /* -------------------------------------------------------------------------- */
 
+.entry-content {
+  font-size: 1.8rem;
+}
 
 .entry-content a:focus {
   text-decoration: none;
@@ -560,6 +563,12 @@ input[type="search"].search-field:focus {
 .entry-content a:hover {
   text-decoration: underline;
 }
+
+.entry-content p,
+.entry-content li {
+  line-height: 1.5;
+}
+
 
 /* Font Families ----------------------------- */
 
