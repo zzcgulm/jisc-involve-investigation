@@ -915,6 +915,14 @@ h2.entry-title {
   .site-description {
     font-size: 1.8rem;
   }
+}
 
 
+@media ( min-width: 1220px ) {
+
+  /* Comments ------------------------------ */
+
+  .comment-reply-title {
+    font-size: 3.6rem;
+  }
 }
