@@ -763,10 +763,34 @@ h2.entry-title {
 }
 
 
+/* Comment Item ----------------------------- */
+
+/* COMMENT FOOTER */
+
+.comment-reply-link.comment-reply-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  background-color: #007aaa; /* Override appearance customization inline style. */
+}
+
+.comment-reply-link.comment-reply-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.comment-reply-link.comment-reply-link:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0092cb;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  15. Widgets
 /* -------------------------------------------------------------------------- */
+
 
 /* Base List Widget -------------------------- */
 
