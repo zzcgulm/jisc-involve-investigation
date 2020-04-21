@@ -19,7 +19,7 @@
   8.  Post: Archive
   9.  Post: Single
   11. Entry Content
-  13. Site Pagination
+  12. Comments
   15. Widgets
   16. Site Footer
   17. Media Queries
@@ -625,6 +625,10 @@ h2.entry-title {
 
 /* POST META */
 
+.post-meta-wrapper {
+  max-width: 72rem;
+}
+
 .post-meta.post-meta {
   color: #666; /* Override appearance customization inline style. */
 }
@@ -664,6 +668,13 @@ h2.entry-title {
 }
 
 
+/* Author Bio -------------------------------- */
+
+.author-bio {
+  max-width: 72rem;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  11. Entry Content
@@ -684,6 +695,17 @@ h2.entry-title {
 .entry-content p,
 .entry-content li {
   line-height: 1.5;
+}
+
+
+/* Alignment Classes ------------------------- */
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 72rem;
+}
+
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
 }
 
 
@@ -710,6 +732,27 @@ h2.entry-title {
   .entry-content .wp-caption-text {
     font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
   }
+}
+
+
+/* Entry Media ------------------------------- */
+
+.alignfull > figcaption,
+.alignfull > .wp-caption-text {
+  max-width: 72rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  12. Comments
+/* -------------------------------------------------------------------------- */
+
+
+/* Comment Respond ---------------------------- */
+
+.comment-respond p:not(.comment-notes) {
+  max-width: 72rem;
 }
 
 
