@@ -675,6 +675,13 @@ h2.entry-title {
 }
 
 
+/* Single Pagination ------------------------- */
+
+.pagination-single a {
+  font-weight: 400;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  11. Entry Content
