@@ -768,9 +768,27 @@ h2.entry-title {
 /*  15. Widgets
 /* -------------------------------------------------------------------------- */
 
+/* Base List Widget -------------------------- */
+
+.widget_archive a,
+.widget_categories a,
+.widget_pages a,
+.widget_meta a,
+.widget_nav_menu a {
+  font-weight: 400;
+}
+
+
+/* Widget: Recent Comments ------------------- */
+
+.widget_recent_comments li {
+  font-weight: 400;
+}
+
 /* Widget: Recent Entries -------------------- */
 
 .widget_recent_entries a {
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -778,6 +796,7 @@ h2.entry-title {
   color: #333;
   text-decoration: none;
 }
+
 
 
 /* -------------------------------------------------------------------------- */
