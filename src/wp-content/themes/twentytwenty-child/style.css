@@ -765,7 +765,43 @@ h2.entry-title {
 
 /* Comment Item ----------------------------- */
 
+/* COMMENT HEADER */
+
+.comment-author {
+  font-weight: 500;
+}
+
+.comment-metadata {
+  color: #666;
+  font-size: 1.8rem;
+}
+
+.comment-metadata a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.comment-metadata a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.comment-metadata a:hover {
+  color: #ae460e;
+}
+
+.comment-metadata a:active {
+  color: #333;
+}
+
 /* COMMENT FOOTER */
+
+.comment-footer-meta {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
 
 .comment-reply-link.comment-reply-link {
   font-size: 1.5rem;
