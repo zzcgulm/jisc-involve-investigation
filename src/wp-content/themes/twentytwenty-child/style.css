@@ -688,10 +688,6 @@ h2.entry-title {
 /*  11. Entry Content
 /* -------------------------------------------------------------------------- */
 
-.entry-content {
-  font-size: 1.8rem;
-}
-
 .entry-content a:focus {
   text-decoration: none;
 }
@@ -960,6 +956,8 @@ h2.entry-title {
   .site-description {
     font-size: 1.8rem;
   }
+
+  /* Entry Content ------------------------- */
 }
 
 
