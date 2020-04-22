@@ -252,6 +252,7 @@ input[type="submit"]:hover {
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
+  background: #0092cb;
   box-shadow: none;
 }
 
@@ -819,6 +820,14 @@ h2.entry-title {
   color: #fff;
   text-decoration: none;
   background-color: #0092cb;
+  box-shadow: 0 .3rem 1.2rem rgba(0,0,0,.23),0 .3rem 1.2rem rgba(0,0,0,.16);
+}
+
+.comment-reply-link.comment-reply-link:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0092cb;
+  box-shadow: none;
 }
 
 
