@@ -891,16 +891,18 @@ h2.entry-title {
   text-decoration: underline;
 }
 
-.footer-copyright a {
+#site-footer .footer-copyright a {
   margin-left: .9rem;
   color: #666;
+  text-decoration: underline;
 }
 
-.footer-copyright a:focus {
+#site-footer .footer-copyright a:focus {
   color: #333;
+  text-decoration: none;
 }
 
-.footer-copyright a:hover {
+#site-footer .footer-copyright a:hover {
   color: #ae460e;
 }
 
@@ -910,6 +912,24 @@ h2.entry-title {
 
 .footer-copyright {
   font-weight: 400;
+}
+
+#site-footer .powered-by-wordpress a {
+  color: #666;
+  text-decoration: underline;
+}
+
+#site-footer .powered-by-wordpress a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-footer .powered-by-wordpress a:hover {
+  color: #ae460e;
+}
+
+#site-footer .powered-by-wordpress a:active {
+  color: #333;
 }
 
 /* Footer Widgets ---------------------------- */
