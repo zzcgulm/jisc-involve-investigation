@@ -827,6 +827,21 @@ h2.entry-title {
 }
 
 
+/* Reply Respond ---------------------------- */
+
+.comment-reply-title small {
+  font-weight: 400;
+}
+
+.comment-reply-title small a {
+  text-decoration: underline;
+}
+
+.comment-reply-title small a:focus {
+  text-decoration: none;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
 /*  15. Widgets
