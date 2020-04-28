@@ -48,6 +48,7 @@ html body {
 .screen-reader-text:focus {
   font-size: 1.5rem;
   font-weight: 400;
+  border-radius: 0;
 }
 
 
