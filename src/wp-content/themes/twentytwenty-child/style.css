@@ -1045,6 +1045,7 @@ h2.entry-title {
 
 .footer-widgets a:focus {
   color: #333;
+  text-decoration: none;
 }
 
 .footer-widgets a:hover {
