@@ -813,6 +813,30 @@ h2.entry-title {
 
 /* Comment Respond ---------------------------- */
 
+.comment-respond .comment-notes a,
+.comment-respond .logged-in-as a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.comment-respond .comment-notes a:focus,
+.comment-respond .logged-in-as a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.comment-respond .comment-notes a:hover,
+.comment-respond .logged-in-as a:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
+.comment-respond .comment-notes a:active,
+.comment-respond .logged-in-as a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
 .comment-respond p:not(.comment-notes) {
   max-width: 72rem;
 }
