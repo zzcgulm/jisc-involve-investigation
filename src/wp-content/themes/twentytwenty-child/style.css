@@ -701,6 +701,20 @@ h2.entry-title {
   font-weight: 400;
 }
 
+.pagination-single a:hover,
+.pagination-single a:active {
+  text-decoration: none;
+}
+
+.pagination-single a:focus .title {
+  text-decoration: none;
+}
+
+.pagination-single a:hover .title,
+.pagination-single a:active .title {
+  text-decoration: underline;
+}
+
 
 /* -------------------------------------------------------------------------- */
 
