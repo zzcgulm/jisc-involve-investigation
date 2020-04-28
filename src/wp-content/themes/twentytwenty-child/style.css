@@ -215,6 +215,11 @@ body fieldset {
   border-color: #d9d9d9; /* Override appearance customization inline style. */
 }
 
+input[type="checkbox"]:focus {
+  outline: 0;
+  outline: .3rem solid #fd6;
+}
+
 .button,
 .faux-button,
 .wp-block-button__link,
