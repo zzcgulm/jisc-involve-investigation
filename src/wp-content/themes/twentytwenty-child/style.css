@@ -501,6 +501,7 @@ body:not(.overlay-header) .primary-menu > li > a:active {
 
 .toggle.close-nav-toggle:focus {
   color: #333;
+  text-decoration: none;
   outline: .3rem solid #fd6;
 }
 
@@ -510,6 +511,7 @@ body:not(.overlay-header) .primary-menu > li > a:active {
 
 .toggle.close-nav-toggle:active {
   color: #333; /* Override appearance customization inline style. */
+  text-decoration: underline;
 }
 
 
