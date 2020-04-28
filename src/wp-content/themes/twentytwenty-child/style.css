@@ -389,8 +389,7 @@ body:not(.overlay-header) #site-header .search-toggle.search-untoggle {
 
 body:not(.overlay-header) #site-header .search-toggle.search-toggle:focus,
 body:not(.overlay-header) #site-header .nav-toggle.nav-toggle:focus {
-  color: #333;/*
-  background-color: #fd6;*/
+  color: #333;
   outline: .3rem solid #fd6;
 }
 
@@ -476,8 +475,7 @@ body:not(.overlay-header) .primary-menu > li > a:active {
 }
 
 .toggle.close-nav-toggle:focus {
-  color: #333;/*
-  background-color: #fd6;*/
+  color: #333;
   outline: .3rem solid #fd6;
 }
 
