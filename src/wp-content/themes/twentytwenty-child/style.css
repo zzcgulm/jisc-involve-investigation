@@ -1,0 +1,1090 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Description:  Twenty Twenty Child Theme to theme Jisc involve
+ Author:       Leigh Morris
+ Template:     twentytwenty
+ Version:      1.0.0
+ Date:         2020-04-28
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+  1.  Document Setup
+  2.  Element Base
+  3.  Helper Classes
+  4.  Site Header
+  5.  Menu Modal
+  6.  Search Modal
+  8.  Post: Archive
+  9.  Post: Single
+  11. Entry Content
+  12. Comments
+  15. Widgets
+  16. Site Footer
+  17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  1. Document Setup
+/* -------------------------------------------------------------------------- */
+
+
+body {
+  background: #fff;
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: normal;
+}
+
+html body {
+  color: #333; /* Override appearance customization inline style. */
+}
+
+/* Screen Reader Text ------------------------ */
+
+.screen-reader-text:focus {
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+
+/* Skip Link --------------------------------- */
+
+.skip-link:focus {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  2. Element Base
+/* ---------------------------------------------*---------------------------- */
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.faux-heading {
+  font-feature-settings: normal;
+  font-variant-numeric: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+h1,
+.heading-size-1 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 5.4rem;
+}
+
+h2,
+.heading-size-2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+}
+
+h3,
+.heading-size-3 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+}
+
+h4,
+.heading-size-4 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+h5,
+.heading-size-5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+
+h6,
+.heading-size-6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+body a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+a:focus {
+  color: #333;
+  text-decoration: none;
+  background-color: #fd6;
+  outline: .3rem solid #fd6;
+}
+
+a:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
+.entry-content hr,
+hr.styled-separator {
+  background: none;
+  background-color: #d9d9d9 !important; /* Override !important rule in parent theme. */
+}
+
+.entry-content hr::before,
+.entry-content hr::after,
+hr.styled-separator::before,
+hr.styled-separator::after {
+  display: none;
+}
+
+
+/* Quotes ------------------------------------ */
+
+blockquote {
+  border-left-width: .6rem;
+}
+
+body blockquote {
+  border-left-color: #d9d9d9; /* Override appearance customization inline style. */
+}
+
+cite {
+  color: #666 !important; /* Override appearance customization inline style. */
+}
+
+
+/* Code -------------------------------------- */
+
+body code,
+body kbd,
+body samp {
+  background: #f7f7f7;
+  border-radius: .3rem;
+}
+
+body pre {
+  border-color: #d9d9d9;
+}
+
+
+/* Inputs ------------------------------------ */
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+fieldset {
+  border-width: .1rem;
+}
+
+body fieldset {
+  border-color: #d9d9d9; /* Override appearance customization inline style. */
+}
+
+input[type="checkbox"]:focus {
+  outline: 0;
+  outline: .3rem solid #fd6;
+}
+
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border-radius: .6rem;
+}
+
+body .button,
+body .faux-button,
+body .wp-block-button__link,
+body .wp-block-file .wp-block-file__button,
+body input[type="button"],
+body input[type="reset"],
+body input[type="submit"] {
+  text-transform: none;
+  background: #007aaa; /* Override appearance customization inline style. */
+}
+
+.button:focus,
+.faux-button:focus,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-file .wp-block-file__button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  text-decoration: none;
+  background: #0092cb;
+  border-radius: 0;
+  outline: 0;
+  outline: .3rem solid #fd6;
+}
+
+.button:hover,
+.faux-button:hover,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-file .wp-block-file__button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  text-decoration: none;
+  background: #0092cb;
+  box-shadow: 0 .3rem 1.2rem rgba(0,0,0,.23),0 .3rem 1.2rem rgba(0,0,0,.16);
+}
+
+.button:active,
+.faux-button:active,
+.wp-block-button .wp-block-button__link:active,
+.wp-block-file .wp-block-file__button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  background: #0092cb;
+  box-shadow: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  outline: 0;
+  outline: .3rem solid #fd6;
+}
+
+
+/* Tables ------------------------------------ */
+
+body table {
+  border-color: #d9d9d9;
+}
+
+body th,
+body td {
+  border-color: #d9d9d9;
+}
+
+body caption {
+  background-color:transparent;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+
+.header-footer-group.header-footer-group {
+  color: #333; /* Override appearance customization inline style. */
+}
+
+.header-footer-group .color-accent.color-accent {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  4.  Site Header
+/* -------------------------------------------------------------------------- */
+
+
+#site-header {
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
+}
+
+.jisc-logo-link {
+  margin-right: .9rem;
+}
+
+.jisc-logo-link:focus {
+  outline: .3rem solid #fd6;
+  opacity: .7;
+}
+
+.jisc-logo-link:hover {
+  opacity: .7;
+}
+
+.jisc-logo-img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+
+/* Header Titles ----------------------------- */
+
+.header-titles {
+  text-align: left;
+}
+
+.site-title {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.site-title a {
+  color: #666;
+}
+
+.site-title a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #ae460e;
+}
+
+.site-title a:active {
+  color: #333;
+}
+
+.site-description {
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.site-description.site-description {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+
+/* Overlay Header ---------------------------- */
+
+body:not(.overlay-header) .header-inner .toggle-wrapper.toggle-wrapper::before {
+  background-color: #d9d9d9; /* Override appearance customization inline style. */
+}
+
+
+/* Header Toggles ---------------------------- */
+
+body:not(.overlay-header) #site-header .search-toggle.search-toggle,
+body:not(.overlay-header) #site-header .nav-toggle.nav-toggle,
+body:not(.overlay-header) #site-header .search-toggle.search-untoggle {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) #site-header .search-toggle.search-toggle:focus,
+body:not(.overlay-header) #site-header .nav-toggle.nav-toggle:focus {
+  color: #333;
+  outline: .3rem solid #fd6;
+}
+
+body:not(.overlay-header) .search-toggle:focus .toggle-inner .toggle-text,
+body:not(.overlay-header) .nav-toggle:focus .toggle-inner .toggle-text {
+  color: #333; /* Override appearance customization inline style. */
+  text-decoration: none;
+}
+
+body:not(.overlay-header) #site-header .search-untoggle.search-untoggle:focus {
+  color: #333;/*
+  background-color: #fd6;*/
+  outline: .3rem solid #fd6;
+}
+
+body:not(.overlay-header) #site-header .search-toggle.search-toggle:hover,
+body:not(.overlay-header) .search-toggle:hover .toggle-inner .toggle-text,
+body:not(.overlay-header) #site-header .nav-toggle.nav-toggle:hover,
+body:not(.overlay-header) .nav-toggle:hover .toggle-inner .toggle-text,
+body:not(.overlay-header) #site-header .search-untoggle.search-untoggle:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) #site-header .search-toggle.search-toggle:active,
+body:not(.overlay-header) .search-toggle:active .toggle-inner .toggle-text,
+body:not(.overlay-header) #site-header .nav-toggle.nav-toggle:active,
+body:not(.overlay-header) .nav-toggle:active .toggle-inner .toggle-text,
+body:not(.overlay-header) #site-header .search-untoggle.search-untoggle:active {
+  color: #333; /* Override appearance customization inline style. */
+}
+
+
+/* Primary Menu ---------------------------- */
+
+ul.primary-menu {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+body:not(.overlay-header) .primary-menu.primary-menu > li > a {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:focus {
+  text-decoration: none; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:active {
+  color: #333; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li.current-menu-item > a {
+  color: #333; /* Override appearance customization inline style. */
+  text-decoration: none;
+}
+
+body:not(.overlay-header) .primary-menu > li > a:focus {
+  color: #333;
+  text-decoration: none; /* Override appearance customization inline style. */
+}
+
+body:not(.overlay-header) .primary-menu > li > a:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+  text-decoration: underline;
+}
+
+body:not(.overlay-header) .primary-menu > li > a:active {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*  5. Menu Modal
+/* -------------------------------------------------------------------------- */
+
+.menu-modal .toggle.toggle {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+.toggle.close-nav-toggle:focus {
+  color: #333;
+  text-decoration: none;
+  outline: .3rem solid #fd6;
+}
+
+.toggle.close-nav-toggle:hover {
+  color: #ae460e; /* Override appearance customization inline style. */
+}
+
+.toggle.close-nav-toggle:active {
+  color: #333; /* Override appearance customization inline style. */
+  text-decoration: underline;
+}
+
+
+/* Main Menu --------------------------------- */
+
+.modal-menu.modal-menu a {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+.modal-menu > li > a,
+.modal-menu > li > .ancestor-wrapper > a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.modal-menu.modal-menu a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.modal-menu.modal-menu a:hover {
+  color: #ae460e;
+}
+
+.modal-menu.modal-menu a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
+.menu-modal.menu-modal nav * {
+  border-color: #d9d9d9; /* Override appearance customization inline style. */
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*  6. Search Modal
+/* -------------------------------------------------------------------------- */
+
+/* Modal Search Form ------------------------- */
+
+.search-modal .search-field {
+  color: #333;
+}
+
+input[type="search"].search-field:focus {
+  outline: .3rem solid #fd6;
+}
+
+.search-modal .search-field::-webkit-input-placeholder {
+  color: #666;
+}
+
+.search-modal .search-field:-ms-input-placeholder {
+  color: #666;
+}
+
+.search-modal .search-field::-moz-placeholder {
+  color: #666;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  7a. Template: Cover Template
+/* -------------------------------------------------------------------------- */
+
+
+.singular:not(.overlay-header) .entry-header.entry-header a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.singular:not(.overlay-header) .entry-header a:focus {
+  color: #333;
+}
+
+.singular:not(.overlay-header) .entry-header a:hover {
+  color: #ae460e;
+}
+
+.singular:not(.overlay-header) .entry-header a:active {
+  color: #333;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  8. Post: Archive
+/* -------------------------------------------------------------------------- */
+
+
+/* Archive Header ---------------------------- */
+
+.archive-header {
+  background-color: #f7f7f7;
+}
+
+.archive-title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  letter-spacing: normal;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  9. Post: Single
+/* -------------------------------------------------------------------------- */
+
+
+/* Post Header ------------------------------- */
+
+.singular .entry-header {
+  background-color: #f7f7f7;
+}
+
+.entry-categories a {
+  border-bottom-width: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.entry-categories a:focus {
+  text-decoration: none;
+}
+
+h1.entry-title,
+h2.entry-title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 5.4rem;
+}
+
+.entry-title a {
+  text-decoration: underline;
+}
+
+.entry-title.entry-title a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.entry-title a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.entry-title a:hover {
+  color: #ae460e;
+}
+
+.entry-title a:active {
+  color: #333;
+}
+
+/* POST META */
+
+.post-meta-wrapper {
+  max-width: 72rem;
+}
+
+.post-meta.post-meta {
+  color: #666; /* Override appearance customization inline style. */
+}
+
+.post-meta a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.singular:not(.overlay-header) .entry-header .post-meta.post-meta a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.post-meta a:focus,
+.singular:not(.overlay-header) .entry-header .post-meta a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-meta a:hover,
+.singular:not(.overlay-header) .entry-header .post-meta a:hover {
+  color: #ae460e;
+}
+
+.post-meta a:active,
+.singular:not(.overlay-header) .entry-header .post-meta a:active {
+  color: #333;
+}
+
+.post-meta .meta-icon {
+  font-size: 1.8rem;
+  color: #7f7f7f;
+}
+
+.post-meta .meta-text {
+  font-size: 1.8rem;
+}
+
+
+/* Author Bio -------------------------------- */
+
+.author-bio {
+  max-width: 72rem;
+}
+
+
+/* Single Pagination ------------------------- */
+
+.pagination-single a {
+  font-weight: 400;
+}
+
+.pagination-single a:hover,
+.pagination-single a:active {
+  text-decoration: none;
+}
+
+.pagination-single a:focus .title {
+  text-decoration: none;
+}
+
+.pagination-single a:hover .title,
+.pagination-single a:active .title {
+  text-decoration: underline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  11. Entry Content
+/* -------------------------------------------------------------------------- */
+
+.entry-content a:focus {
+  text-decoration: none;
+}
+
+.entry-content a:hover {
+  text-decoration: underline;
+}
+
+.entry-content p,
+.entry-content li {
+  line-height: 1.5;
+}
+
+
+/* Alignment Classes ------------------------- */
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 72rem;
+}
+
+[class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 58rem;
+}
+
+
+/* Font Families ----------------------------- */
+
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt {
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.entry-content cite,
+.entry-content figcaption,
+.entry-content .wp-caption-text {
+  font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+  .entry-content cite,
+  .entry-content figcaption,
+  .entry-content .wp-caption-text {
+    font-family: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+
+/* Entry Media ------------------------------- */
+
+.alignfull > figcaption,
+.alignfull > .wp-caption-text {
+  max-width: 72rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  12. Comments
+/* -------------------------------------------------------------------------- */
+
+
+/* Comment Respond ---------------------------- */
+
+.comment-respond .comment-notes a,
+.comment-respond .logged-in-as a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.comment-respond .comment-notes a:focus,
+.comment-respond .logged-in-as a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.comment-respond .comment-notes a:hover,
+.comment-respond .logged-in-as a:hover {
+  color: #ae460e;
+  text-decoration: underline;
+}
+
+.comment-respond .comment-notes a:active,
+.comment-respond .logged-in-as a:active {
+  color: #333;
+  text-decoration: underline;
+}
+
+.comment-respond p:not(.comment-notes) {
+  max-width: 72rem;
+}
+
+
+/* Comment Item ----------------------------- */
+
+/* COMMENT HEADER */
+
+.comment-author {
+  font-weight: 500;
+}
+
+.comment-metadata {
+  color: #666;
+  font-size: 1.8rem;
+}
+
+.comment-metadata a {
+  color: #069;
+  text-decoration: underline;
+}
+
+.comment-metadata a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.comment-metadata a:hover {
+  color: #ae460e;
+}
+
+.comment-metadata a:active {
+  color: #333;
+}
+
+/* COMMENT FOOTER */
+
+.comment-footer-meta {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.comment-reply-link.comment-reply-link {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: none;
+  background-color: #007aaa; /* Override appearance customization inline style. */
+}
+
+.comment-reply-link.comment-reply-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.comment-reply-link.comment-reply-link:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0092cb;
+  box-shadow: 0 .3rem 1.2rem rgba(0,0,0,.23),0 .3rem 1.2rem rgba(0,0,0,.16);
+}
+
+.comment-reply-link.comment-reply-link:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0092cb;
+  box-shadow: none;
+}
+
+
+/* Reply Respond ---------------------------- */
+
+.comment-reply-title small {
+  font-weight: 400;
+}
+
+.comment-reply-title small a {
+  text-decoration: underline;
+}
+
+.comment-reply-title small a:focus {
+  text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  15. Widgets
+/* -------------------------------------------------------------------------- */
+
+
+/* Base List Widget -------------------------- */
+
+.widget_archive a,
+.widget_categories a,
+.widget_pages a,
+.widget_meta a,
+.widget_nav_menu a {
+  font-weight: 400;
+}
+
+
+/* Widget: Recent Comments ------------------- */
+
+.widget_recent_comments li {
+  font-weight: 400;
+}
+
+/* Widget: Recent Entries -------------------- */
+
+.widget_recent_entries a {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.widget_recent_entries a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  16. Site Footer
+/* -------------------------------------------------------------------------- */
+
+
+.footer-nav-widgets-wrapper {
+  background-color: #f7f7f7; /* Override appearance customization inline style. */
+}
+
+#site-footer {
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+
+/* Footer Bottom ----------------------------- */
+
+#site-footer a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-footer a:active {
+  text-decoration: underline;
+}
+
+#site-footer .footer-copyright a {
+  margin-left: .9rem;
+  color: #666;
+  text-decoration: underline;
+}
+
+#site-footer .footer-copyright a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-footer .footer-copyright a:hover {
+  color: #ae460e;
+}
+
+#site-footer .footer-copyright a:active {
+  color: #333;
+}
+
+.footer-copyright {
+  font-weight: 400;
+}
+
+#site-footer .powered-by-wordpress a {
+  color: #666;
+  text-decoration: underline;
+}
+
+#site-footer .powered-by-wordpress a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-footer .powered-by-wordpress a:hover {
+  color: #ae460e;
+}
+
+#site-footer .powered-by-wordpress a:active {
+  color: #333;
+}
+
+/* Footer Widgets ---------------------------- */
+
+.footer-widgets-outer-wrapper {
+  border-bottom-width: 0; /* Override appearance customization inline style. */
+}
+
+.footer-widgets a {
+  text-decoration: underline;
+}
+
+.footer-widgets.footer-widgets a {
+  color: #069; /* Override appearance customization inline style. */
+}
+
+.footer-widgets a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-widgets a:hover {
+  color: #ae460e;
+}
+
+.footer-widgets a:active {
+  color: #333;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*  17. Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media ( min-width: 700px ) {
+
+
+  /* Site Header --------------------------- */
+
+  .jisc-logo-link {
+    margin-right: 1.8rem;
+  }
+
+  .site-description {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media ( min-width: 1220px ) {
+
+  /* Comments ------------------------------ */
+
+  .comment-reply-title {
+    font-size: 3.6rem;
+  }
+}
