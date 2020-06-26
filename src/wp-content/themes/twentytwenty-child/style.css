@@ -3,8 +3,8 @@
  Description:  Twenty Twenty Child Theme to theme Jisc involve
  Author:       Leigh Morris
  Template:     twentytwenty
- Version:      1.0.0
- Date:         2020-04-28
+ Version:      1.0.1
+ Date:         2020-06-26
 */
 
 /*--------------------------------------------------------------
@@ -342,6 +342,7 @@ body caption {
 }
 
 .jisc-logo-link {
+  flex-shrink: 0;
   margin-right: .9rem;
 }
 
