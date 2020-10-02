@@ -1033,6 +1033,34 @@ h2.entry-title {
   color: #333;
 }
 
+#site-footer .footer-legal a {
+  color: #666;
+  text-decoration: underline;
+}
+
+#site-footer .footer-legal-item a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-footer .footer-legal-item a:hover {
+  color: #ae460e;
+}
+
+#site-footer .footer-legal-item a:active {
+  color: #333;
+}
+
+.footer-legal-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.footer-legal-item {
+  margin-left: 0;
+}
+
+
 /* Footer Widgets ---------------------------- */
 
 .footer-widgets-outer-wrapper {
@@ -1077,6 +1105,21 @@ h2.entry-title {
 
   .site-description {
     font-size: 1.8rem;
+  }
+
+
+  /* Site Footer --------------------------- */
+
+  .footer-legal-list {
+    display: flex;
+  }
+
+  .footer-legal-item {
+    margin-left: 2rem;
+  }
+
+  .footer-legal-item:first-child {
+    margin-left: 0;
   }
 }
 
